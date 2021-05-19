@@ -1,2 +1,1 @@
-install node_modules here using npm install npm-install-all -g
-install axios package using npm install --save axios
+IT CONTAINS THE API CODE THAT WE ARE USING TO EXECUTE OUR CODE

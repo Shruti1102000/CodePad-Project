@@ -1,20 +1,23 @@
 import axios from 'axios';
+var output;
 var datas = JSON.stringify({
-           "code":`public class program{
-                    public static void main(String [] args){
-                        System.out.println(5+5+6);
-                      }
-                    }`,
-           "language":"java",
+           "code":`#include<bits/stdc++.h>
+           using namespace std;
+           int main(){
+             cout<<4<<endl;
+             return 0;
+           }`,
+           "language":"cpp",
            "input":""
            });
 
 var config = {
   method: 'post',
   url: 'https://codexweb.netlify.app/.netlify/functions/enforceCode',
-  headers: { 
+  /*headers: { 
     'Content-Type': 'application/json'
-  },
+
+  },*/
   data : datas
 };
 
